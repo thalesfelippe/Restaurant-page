@@ -62,6 +62,10 @@ h6 {
     color: #FFF;
 }
 
+p{
+    font-size: 16px;
+}
+
 .container {
     max-width: 1170px;
     margin: auto;
@@ -90,7 +94,6 @@ h6 {
 
 /* Section title */
 .section-title {
-    background-color: red;
     width: 100%;
     padding: 0 15px;
     text-align: center;
@@ -106,7 +109,10 @@ h6 {
     content: attr(data-title);
     display: block;
     font-size: 24px;
-    color: #0A734C;
+    color: #4DFF4D;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 /* buttons */
 .btn {
@@ -120,19 +126,19 @@ h6 {
     font-size: 16px;
     cursor: pointer;
     font-family: inherit;
-    color: #00FF00;
+    color: #4DFF4D;
     line-height: 1.5;
     user-select: none;
     border: none;
 }
 
 .btn-default {
-    border: 2px solid #00FF00;
+    border: 2px solid #00CC00;
 }
 
 .btn-default:hover {
     color: #FFF;
-    background-color: #00FF00;
+    background-color: #00CC00;
 }
 
 /* Keyframes */
@@ -142,6 +148,15 @@ h6 {
     }
     50% {
         transform: scale(1.1);
+    }
+}
+
+@keyframes spin01 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
     }
 }
 /* -----------------
@@ -336,5 +351,67 @@ home section
 About section
 --------------*/
 .about-section {
+    background-color: #003B19;
+}
+
+.about-text,
+.about-img {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-img .img-box {
+    position: relative;
+}
+
+.about-img .img-box::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #0A734C;
+    left: calc(50% - 50px);
+    top: calc(50% - 40px);
+    animation: spin01 10s linear infinite;
+}
+
+.about-img .img-box h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: #00CC00;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.about-text p {
+    margin: 0 0 15px;
+}
+
+.about-text .btn {
+    margin: 15px 0 0;
+}
+
+/* -----------------
+Menu section
+--------------*/
+.menu-section {
     background-color: #01400B;
 }
