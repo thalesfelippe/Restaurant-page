@@ -84,6 +84,30 @@ h6 {
     min-height: 100vh;
 }
 
+.sec-padding {
+    padding: 80px 0;
+}
+
+/* Section title */
+.section-title {
+    background-color: red;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.section-title h2::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 24px;
+    color: #0A734C;
+}
 /* buttons */
 .btn {
     display: inline-block;
@@ -306,4 +330,11 @@ home section
 
 .home-text p {
     margin: 0 0 30px;
+}
+
+/* -----------------
+About section
+--------------*/
+.about-section {
+    background-color: #01400B;
 }
