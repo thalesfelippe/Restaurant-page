@@ -1,3 +1,13 @@
+window.addEventListener("load", function(){
+    // page loader
+    document.querySelector(".page-loader").classList.add("fade-out");
+    setTimeout(function(){
+        document.querySelector(".page-loader").style.display="none";
+    },1000);
+    // animation on scroll
+    AOS.init();
+});
+
 // Navbar toggle
 const navToggler = document.querySelector(".nav-toggler");
 navToggler.addEventListener("click", toggleNav);
@@ -34,5 +44,7 @@ menuTabs.addEventListener("click", function(e){
         const menuSection = document.querySelector(".menu-section");
         menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
         menuSection.querySelector(target).classList.add("active");
+        // animation scroll
+        AOS.init();
     }
 });
