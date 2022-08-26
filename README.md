@@ -1,22 +1,10 @@
 <h1 align="center">
   <img 
-    src="https://i.imgur.com/41EjMuQ.png"
-  width="150"/>
   <p>Casa Verde - Restaurant Page</p>
 </h1>
 
 <h1 align="center">
-<img src="https://i.imgur.com/OxvqRrn.png"
-  />
-  <img src="https://i.imgur.com/wXphTUI.png"
-  />
-  <img src="https://i.imgur.com/l5BuFr2.png"
-  />
-  <img src="https://i.imgur.com/UirJYGo.png"
-  />
-  <img src="https://i.imgur.com/FIWeeXf.png"
-  />
-  <img src="https://i.imgur.com/KkNVXqx.png"
+<img src="https://i.imgur.com/hdt1aDh.jpg"
   />
 </h1>
 
